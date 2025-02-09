@@ -59,7 +59,7 @@
                 for (var i = 0; i < info.length; i++) {
                     if (x != info[i].level) {
                         if (obj_sep != null) {
-                            obj_sep.html("<td colspan='4'>" + "<b>" + mark + x + " (" + count +
+                            obj_sep.html("<td colspan='5'>" + "<b>" + mark + x + " (" + count +
                                 "譜面)</b></td>");
                         }
                         obj_sep = $("<tr class='table-dark' style='text-align:center' id='" + mark + info[i].level +
@@ -72,7 +72,7 @@
                     var str = $("<tr></tr>");
 
                     // Level
-                    $("<td width='5%'>" + mark + x + "</td>").appendTo(str);
+                    $("<td width='10%'>" + mark + x + "</td>").appendTo(str);
 
                     // Title
                     $("<td width='40%'>" +
@@ -80,7 +80,7 @@
                         .md5 + "' target='_blank'>" + info[i].title + "</a></td>").appendTo(str);
 
                     // Artist
-                    $("<td width='30%'>" +
+                    $("<td width='25%'>" +
                         "<a href='" + info[i]
                         .music + "' target='_blank'>" + info[i].artist + "</a></td>").appendTo(str);
 
