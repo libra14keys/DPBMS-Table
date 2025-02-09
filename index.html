@@ -27,12 +27,10 @@
     <div class="container">
 
         <div class="alert alert-success mb-3" role="alert">
-            <p>14keysの譜面難易度表です。</p>
-            <p>てすと</p>
+            <p>Game mode "14keys"のBMS難易度表です。</p>
             <hr>
-            <p class="mb-0">説明はまだない。</p>
+            <p class="mb-0">追加・変更・報告はXまで。@epi_bme</p>
         </div>
-
 
         <!--ここから難易度表本体-->
         <div>
@@ -78,13 +76,13 @@
 
                     // Title
                     $("<td width='45%'>" +
-                        "<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=" + info[
-                            i]
+                        "<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=" + info[i]
                         .md5 + "' target='_blank'>" + info[i].title + "</a></td>").appendTo(str);
 
                     // Artist
                     $("<td width='40%'>" + info[i].artist + "</td>").appendTo(str);
-
+                        "<a href='" + info[i].music + "' target='_blank'>" + info[i].artist + "</a></td>").appendTo(str);
+                    
                     // Comment
                     $("<td width='10%'>" + info[i].comment + "</td>").appendTo(str);
                     str.appendTo(obj);
